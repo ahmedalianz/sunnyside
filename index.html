@@ -18,7 +18,10 @@
 
 <body>
   <div id="home" class="container-fluid">
-
+    <audio src="https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a"
+      controls="" autoplay loop="">
+      <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
     <div id="header">
       <div id="logo">Sunnyside</div><img onclick="showmenu()" id="menu" src="images/icon-hamburger.svg" alt="">
       <img onclick="hidemenu()" src="images/icon-close.svg" alt="" id="close">
@@ -51,12 +54,13 @@
       <a class="writing" href="#"> Learn more
       </a>
     </div>
-    <div class="pieces"><img src="images/desktop/image-transform.jpg" alt=""></div>
+    <div class="pieces"><img id="imgz" src="images/desktop/image-transform.jpg" alt=""></div>
     <div class="pieces"><img src="images/desktop/image-stand-out.jpg" alt=""></div>
     <div id="para2a" class="pieces">
       <h1 class="writing"> Stand out to the right audience
       </h1>
-      <p id="p2" class="writing"> Using a collaborative formula of designers, researchers, photographers, videographers, and
+      <p id="p2" class="writing"> Using a collaborative formula of designers, researchers, photographers, videographers,
+        and
         copywriters, we’ll
         build and extend your brand in digital places.
       </p>
@@ -64,85 +68,86 @@
       </a>
     </div>
     <div class="pieces"><img src="images/desktop/image-graphic-design.jpg" alt="">
-      <div class="design">
+      <div id="design1" class="design">
         <h3>Graphic design</h3>
         <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
           potential clients’ attention.
         </p>
       </div>
-</div>
-      <div class="pieces"><img src="images/desktop/image-photography.jpg" alt="">
-        <div class="design">
-          <h3> Photography
-          </h3>
-          <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business
-            image.
-          </p>
-        </div>
+    </div>
+    <div class="pieces"><img src="images/desktop/image-photography.jpg" alt="">
+      <div id="design2" class="design">
+        <h3> Photography
+        </h3>
+        <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business
+          image.
+        </p>
       </div>
+    </div>
 
-</div>
-
-      <div id="testo">
-        <h1>Client testimonials</h1>
-        <div id="box">
-          <div class="tee">
-            <img  src="images/image-emily.jpg" alt="">
-            <p class="para"> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
-              were always
-              hit.
-            </p>
-            <h4>Emily R.</h4>
-            <p id="last">Marketing Director</p>
-          </div>
-          <div class="tee">
-            <img  src="images/image-thomas.jpg" alt="">
-            <p class="para"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-              satisfying and
-              enjoyable experience.
-            </p>
-            <h4> Thomas S.
-            </h4>
-            <p id="last"> Chief Operating Officer
-            </p>
-          </div>
-          <div class="tee">
-            <img  src="images/image-jennie.jpg" alt="">
-            <p class="para"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-              recommended!
-            </p>
-            <h4> Jennie F.
-            </h4>
-            <p id="last"> Business Owner
-            </p>
-          </div>
-        </div>
+  </div>
+  <div> <video  loop autoplay src="video.mp4"></video>
+  </div>
+  <div id="testo">
+    <h1 id="f0">Client testimonials</h1>
+    <div id="box">
+      <div id="f1" class="tee">
+        <img src="images/image-emily.jpg" alt="">
+        <p class="para"> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+          were always
+          hit.
+        </p>
+        <h4>Emily R.</h4>
+        <p id="last">Marketing Director</p>
       </div>
-
-      <div id="grid2">
-        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
-        <img src="images/desktop/image-gallery-orange.jpg" alt="">
-        <img src="images/desktop/image-gallery-cone.jpg" alt="">
-        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      <div id="f2" class="tee">
+        <img src="images/image-thomas.jpg" alt="">
+        <p class="para"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+          satisfying and
+          enjoyable experience.
+        </p>
+        <h4> Thomas S.
+        </h4>
+        <p id="last"> Chief Operating Officer
+        </p>
       </div>
-
-      <div id="footer">
-        <div id="foot">
-          <div id="lins">
-            <h3>Sunnyside</h3>
-            <span><a href="#">About</a> </span>
-            <span><a href="#">Services</a></span>
-            <span><a href="#">Project</a></span>
-          </div>
-          <div id="icons">
-            <a href=""><img src="images/icon-facebook.svg" alt=""></a>
-            <a href=""><img src="images/icon-instagram.svg" alt=""></a>
-            <a href=""><img src="images/icon-twitter.svg" alt=""></a>
-            <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
-          </div>
-        </div>
+      <div id="f3" class="tee">
+        <img src="images/image-jennie.jpg" alt="">
+        <p class="para"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+          recommended!
+        </p>
+        <h4> Jennie F.
+        </h4>
+        <p id="last"> Business Owner
+        </p>
       </div>
-<script src="script.js"></script>
+    </div>
+  </div>
+
+  <div id="grid2">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+  </div>
+
+  <div id="footer">
+    <div id="foot">
+      <div id="lins">
+        <h3>Sunnyside</h3>
+        <span><a href="#">About</a> </span>
+        <span><a href="#">Services</a></span>
+        <span><a href="#">Project</a></span>
+      </div>
+      <div id="icons">
+        <a href="https://www.facebook.com/ahmed.tiger.300"><img src="images/icon-facebook.svg" alt="face"></a>
+        <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+        <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+        <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

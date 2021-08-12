@@ -1,14 +1,21 @@
 body {
-    /* font-family: 'Barlow',
-        sans-serif; */
-    font-family: 'Fraunces',
-        serif;
+    /*font-family: 'Barlow',        sans-serif;
+    */
+    font-family: 'Fraunces', serif;
     font-size: 18px;
     color: #fff;
     margin: 0;
     background-color: #fff;
     padding: 0;
     text-transform: capitalize;
+}
+
+audio {
+    opacity: 0.2;
+}
+
+audio:hover {
+    opacity: 1
 }
 
 button {
@@ -134,6 +141,16 @@ button {
 
 }
 
+#para1a,
+#para2a {
+    opacity: 0;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+
 .pieces {
     display: flex;
     flex-direction: column;
@@ -172,10 +189,24 @@ button {
 .design {
     position: absolute;
     top: 55%;
-    font-family: 'Barlow',
-        sans-serif;
+    left: -160vw;
+    transition: 1s;
+    font-family: 'Barlow', sans-serif;
     text-align: center;
     padding: 0 116px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+#design1,
+#design2 {
+    transition: 4.5s;
+    -webkit-transition: 4.5s;
+    -moz-transition: 4.5s;
+    -ms-transition: 4.5s;
+    -o-transition: 4.5s;
 }
 
 .design p {
@@ -186,6 +217,7 @@ button {
     font-size: 2rem;
     color: #245248;
 }
+
 
 /* ======================================= */
 #testo {
@@ -216,6 +248,11 @@ button {
     color: hsl(212, 27%, 19%);
 }
 
+video {
+    margin: 0 auto;
+    width: 100%;
+}
+
 #testo img {
     display: block;
     margin: 0 auto;
@@ -237,6 +274,52 @@ button {
 #testo p,
 #testo h4 {
     text-align: center
+}
+
+#f0 {
+    opacity: 0;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+#f1,
+#f2,
+#f3 {
+    top: 80vh;
+    position: relative;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+#f2 img {
+    animation: image 0.5s ease infinite alternate;
+    -webkit-animation: image 0.5s ease infinite alternate;
+}
+
+#f3 img {
+    animation: image 0.5s ease infinite alternate;
+    -webkit-animation: image 0.5s ease infinite alternate;
+}
+
+#f1 img {
+    animation: image 0.5s ease infinite alternate;
+    -webkit-animation: image 0.5s ease infinite alternate;
+}
+
+@keyframes image {
+    0% {
+        width: 45%;
+    }
+
+    100% {
+        width: 49%;
+    }
 }
 
 #grid2 {
