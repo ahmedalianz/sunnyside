@@ -52,19 +52,19 @@ window.onscroll = function () {
     } else {
         para1.style.opacity = "0";
     }
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         para2.style.opacity = "1";
     } else {
         para2.style.opacity = "0";
     }
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
         design1.setAttribute('style', 'left:0')
         design2.setAttribute('style', 'left:0')
     } else {
         design1.setAttribute('style', 'left:-160vw')
         design2.setAttribute('style', 'left:-160vw')
     }
-    if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+    if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
         f1.setAttribute('style', 'top:0')
         f2.setAttribute('style', 'top:0')
         f3.setAttribute('style', 'top:0')
