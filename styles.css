@@ -44,8 +44,9 @@ button {
     margin: 0 auto;
     position: absolute;
     left: 45%;
-    width: 8%;
+    width: 15%;
     font-size: 18px;
+    text-align: center;
     margin-top: 10px;
     border: none;
     border-radius: 15px;
@@ -56,8 +57,9 @@ button {
 #better {
     margin: 0 auto;
     position: absolute;
+    text-align: center;
     left: 43%;
-    width: 18%;
+    width: 23%;
     font-size: 28px;
     border: none;
     border-radius: 15px;
@@ -70,6 +72,17 @@ button {
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
+}
+
+@media screen and (max-width:340px) {
+    #clicko {
+        width: 26%;
+    }
+
+    #better {
+        width: 28%;
+        left: 40%;
+    }
 }
 
 #home {
