@@ -14,7 +14,8 @@ function hidemenu() {
     Close.style.display = 'none'
     links.classList.remove('active')
 }
-let img1 = document.getElementById('imgz');
+let img1 = document.getElementById('imgz'),
+    img2 = document.getElementById('imgx');;
 let timer = setInterval(function () {
     z = Math.floor(Math.random() * 10)
     if (z > 0 && z < 6) {
@@ -22,11 +23,19 @@ let timer = setInterval(function () {
     } else if (z > 5 && z < 10) {
         img1.setAttribute('src', 'images/desktop/image-transform.jpg')
     }
-    // img1.onmouseover = function () {
-    //     this.setAttribute('src', 'images/desktop/image-transform4.jpg')
-    //     clearInterval(timer);
-    // }
 }, 500)
+let timer2 = setInterval(function () {
+    z = Math.floor(Math.random() * 10)
+    if (z > 0 && z < 4) {
+        img2.setAttribute('src', 'images/desktop/aaa.jpg')
+    } else if (z > 3 && z < 6) {
+        img2.setAttribute('src', 'images/desktop/aaaa.jpg')
+    } else {
+        img2.setAttribute('src', 'images/desktop/image-stand-out.jpg')
+
+    }
+}, 500)
+
 let para1 = document.getElementById('para1a'),
     para2 = document.getElementById('para2a'),
     design2 = document.getElementById('design2'),
@@ -62,7 +71,7 @@ window.onscroll = function () {
         f0.style.opacity = "1";
 
     } else {
-                f1.setAttribute('style', 'top:80vh')
+        f1.setAttribute('style', 'top:80vh')
         f2.setAttribute('style', 'top:80vh')
         f3.setAttribute('style', 'top:80vh')
         f0.style.opacity = "0";
@@ -70,4 +79,16 @@ window.onscroll = function () {
     }
 
 
+}
+let cli = document.getElementById('clicko'),
+    better = document.getElementById('better');
+cli.onclick = function () {
+    this.style.display = 'none';
+    better.style.display = 'block'
+
+    better.innerHTML = 'Thats Better'
+
+    setTimeout(function () {
+        better.style.display = 'none'
+    }, 1500)
 }

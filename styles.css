@@ -12,6 +12,7 @@ body {
 
 audio {
     opacity: 0.2;
+    position: absolute;
 }
 
 audio:hover {
@@ -31,6 +32,44 @@ button {
 #close {
     display: none;
     width: 50px
+}
+
+#learn1,
+#learn2 {
+    text-decoration: underline;
+}
+
+
+#clicko {
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    width: 8%;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4a8220;
+    padding: 10px;
+}
+
+#better {
+    margin: 0 auto;
+    position: absolute;
+    left: 43%;
+    width: 18%;
+    font-size: 28px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4a8220;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
 }
 
 #home {
