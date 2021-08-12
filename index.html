@@ -19,11 +19,13 @@
 <body>
   <div id="home" class="container-fluid">
     <audio id="aud" src="https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a"
-      controls="" autoplay loop="">
+      controls autoplay>
       <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     <script>
-      document.getElementById('aud').play()
+      window.onclick = function () {
+        document.getElementById('aud').play()
+      }
     </script>
     <div id="header">
       <div id="logo">Sunnyside</div><img onclick="showmenu()" id="menu" src="images/icon-hamburger.svg" alt="">
@@ -90,13 +92,13 @@
 
   </div>
   <div> <video loop autoplay muted>
-    <source src="video.mp4">
-    <source src="video2.mp4">
-        <source src="video3.mp4">
-    <source src="video4.mp4">
+      <source src="video.mp4">
+      <source src="video2.mp4">
+      <source src="video3.mp4">
+      <source src="video4.mp4">
 
-    Your browser does not support the video
-  </video>
+      Your browser does not support the video
+    </video>
   </div>
 
   <div id="testo">
